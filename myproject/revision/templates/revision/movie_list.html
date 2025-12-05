@@ -1,0 +1,18 @@
+{% extends "revision/base.html"%}
+{% block content %}
+<h2>All Moviews</h2>
+<table border="">
+    <tr>
+        <th>title</th>
+        <th>Director</th>
+        <th>View Details</th>
+    </tr>
+    {% for movie in movies %}
+    <tr>
+        <td>{{movie.title}}</td>
+        <td>{{movie.director}}</td>
+        <td><a href="{% url 'movie_detail' movie.pk%}">view details</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock%}

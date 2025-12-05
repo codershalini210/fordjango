@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'revision',
     'activity.apps.ActivityConfig',
     'pages.apps.PagesConfig',
     'django.contrib.admin',

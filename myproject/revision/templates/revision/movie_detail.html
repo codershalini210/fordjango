@@ -1,0 +1,11 @@
+{% extends "revision/base.html"%}
+{% block content%}
+<a href="{% url 'movie-list' %}">All Movies</a>    
+<h2>{{movie.title}} by {{movie.director}}</h2>
+    
+    <p>Release year :{{movie.release_year}}</p>
+     <p>Rating {{movie.rating}}</p>
+     <p>{{movie.synopsis}}</p>
+    
+
+{% endblock %}
